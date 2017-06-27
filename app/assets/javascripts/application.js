@@ -12,4 +12,8 @@
 //
 //= require rails-ujs
 //= require turbolinks
+//= require bootstrap-material-design.iife.min.js
+
+
+
 //= require_tree .
