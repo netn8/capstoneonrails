@@ -1,3 +1,48 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#background-image {
+  background-image:
+                  linear-gradient(
+                  rgba(0, 0, 0, 0.5),
+                  rgba(0, 0, 0, 0.5)
+                  ), url("background_image.png");
+  height: 90vh;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  // background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('landingpagepic.jpg');
+
+}
+
+.container-banner {
+  height: 90vh;
+  display: table;
+  position: absolute;
+  width: 100%;
+}
+
+.row-banner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: white;
+}
+
+.img-nav-brand {
+  max-height: 51px;
+  max-width: 51px;
+}
+
+.nav-item {
+  float: right !important;
+}
