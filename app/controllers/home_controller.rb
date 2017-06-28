@@ -1,20 +1,13 @@
 class HomeController < ApplicationController
-  def show
-    render template: "home/#{params[:page]}"
+  def home
   end
-  def show
-    render template: "home"
+  def mechanical_engineering
   end
-  def show
-    render template: "engineering/mechanical"
+  def computer_engineering
   end
-  def show
-    render template: "engineering/electrical"
+  def electrical_engineering
   end
-  def show
-    render template: "engineering/computer"
+  def contact
   end
-  def show
-    render template: "contact"
-  end
+
 end

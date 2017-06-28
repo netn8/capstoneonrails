@@ -17,15 +17,9 @@
     <% if alert %>
       <p class="alert alert-danger"><%= alert %></p>
     <% end %>
-    <ul class="nav nav-tabs">
-      <a class="navbar-brand" href="#">
-        <%= image_tag("CapstoneConnect_logo_symbol.png", class: "img-nav-brand d-inline-block align-top", alt: "logo") %>
-        CapstoneConnect
-      </a>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact Us</a>
-      </li>
-    </ul>
+    <%= render "layouts/header" %>
+
     <%= yield %>
+    <%= render "layouts/footer" %>
   </body>
 </html>
