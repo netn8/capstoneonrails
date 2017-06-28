@@ -12,14 +12,27 @@
   </div>
 </div>
 <br>
+<br>
 <div class="container">
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Engineering students work on your projects <span class="text-muted"> For a whole year </span></h2>
+      <p class="lead">During that year you get to see their:</p>
+      <ul>
+        <li>Creative problem solving skills during the planning faise</li>
+        <li>Ability to plan and develope a build plan</li>
+        <li>Crisis handling</li>
+        <li>Finalized prototype</li>
+      </ul>
+    </div>
+    <div class="col-md-5">
       <%= image_tag("ME-Senior-Design-2013-362.jpg", class: "img-fluid") %>
     </div>
-    <div class="col-md-8">
-      <h3>Students work with you on a project of your choosing for a whole year</h3>
-      <p>Every year students have to complete a capstone project, from idea to planning to prototype.</p>
-    </div>
   </div>
+  <hr class="featurette-divider">
+  <%= render "home/engineering_diciplines" %>
+  <hr class="featurette-divider">
+  <%= render "home/how_it_works" %>
+  <hr class="featurette-divider">
+  <!-- TODO create carrosel of past projects -->
 </div>
