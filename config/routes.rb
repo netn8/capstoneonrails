@@ -7,5 +7,7 @@ Rails.application.routes.draw do
   get "/electrical-engineering" => "home#electrical_engineering"
   get "/contact" => "home#contact"
   get "/home" => "home#home"
+  get "/ip" => "home#ip"
   root :to => 'home#home'
+
 end

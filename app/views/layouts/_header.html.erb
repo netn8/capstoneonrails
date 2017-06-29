@@ -1,11 +1,45 @@
-<ul class="nav nav-tabs">
-  <%= link_to root_path, class: "text-decoration-none" do %>
-    <%= image_tag("CapstoneConnect_logo_symbol.png", class: "img-nav-brand d-inline-block align-top", alt: "logo") %>
-    CapstoneConnect
-  <% end %>
-  <li class="nav-item">
-    <%= link_to contact_path, class: "nav-link" do %>
-      Contact Us
-    <% end %>
-  </li>
-</ul>
+<div class="bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay">
+  <header class="bmd-layout-header">
+    <div class="navbar navbar-light bg-faded">
+      <button class="navbar-toggler hidden-lg-up pull-right" type="button" data-toggle="drawer" data-target="#dw-s2">
+        <span class="sr-only">Toggle drawer</span>
+        <i class="material-icons">menu</i>
+      </button>
+      <ul class="nav navbar-nav">
+        <%= link_to root_path, class: "text-decoration-none" do %>
+          <%= image_tag("CapstoneConnect_logo_symbol.png", class: "img-nav-brand img-nav-bar-brand d-inline-block align-top", alt: "logo") %>
+          <span class="hidden-md-down cclogo-text">CapstoneConnect</span>
+        <% end %>
+        <li class="nav-item hidden-md-down pull-right">
+          <%= link_to contact_path, class: "nav-link" do %>
+            Contact Us
+          <% end %>
+        </li>
+        <li class="nav-item hidden-md-down">
+          <%= link_to ip_path, class: "nav-link btn list-group-item" do %>
+            IP
+          <% end %>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div id="dw-s2" class="bmd-layout-drawer bg-faded">
+    <header>
+      <%= link_to root_path, class: "text-decoration-none" do %>
+        <%= image_tag("CapstoneConnect_logo_symbol.png", class: "img-nav-brand d-inline-block align-top", alt: "logo") %>
+        CapstoneConnect
+      <% end %>
+    </header>
+    <ul class="list-group">
+      <%= link_to ip_path, class: "nav-link" do %>
+        IP
+      <% end %>
+      <%= link_to contact_path, class: "nav-link" do %>
+        Contact Us
+      <% end %>
+    </ul>
+  </div>
+  <main class="bmd-layout-content">
+    <%= yield %>
+  </main>
+</div>

@@ -17,9 +17,9 @@
     <% if alert %>
       <p class="alert alert-danger"><%= alert %></p>
     <% end %>
-    <%= render "layouts/header" %>
-
-    <%= yield %>
-    <%= render "layouts/footer" %>
+    <%= render layout: "layouts/header" do %>
+      <%= yield %>
+      <%= render "layouts/footer" %>
+    <% end %>
   </body>
 </html>

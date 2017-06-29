@@ -17,7 +17,7 @@
 //= require tether
 //= require bootstrap-material-design.iife.min.js
 
-
+//= global
 
 
 
