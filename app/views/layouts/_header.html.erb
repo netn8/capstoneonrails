@@ -30,13 +30,11 @@
         CapstoneConnect
       <% end %>
     </header>
+    <hr>
     <ul class="list-group">
-      <%= link_to ip_path, class: "nav-link" do %>
-        IP
-      <% end %>
-      <%= link_to contact_path, class: "nav-link" do %>
-        Contact Us
-      <% end %>
+      <%= dashboard_nav_link '<i class="material-icons">email</i> Contact'.html_safe, contact_path, 'btn list-group-item lowercase'  %>
+      <%= dashboard_nav_link '<i class="material-icons">description</i> IP Docs'.html_safe, ip_path, 'btn list-group-item lowercase'  %>
+
     </ul>
   </div>
   <main class="bmd-layout-content">
