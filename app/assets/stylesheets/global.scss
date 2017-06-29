@@ -1,3 +1,5 @@
+html,body{height:100%;}
+
 .BoxShadowHelper-level1 {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24) !important;
 }
@@ -43,8 +45,12 @@
 
 footer {
   background-color: #1976D2;
-  position: absolute;
-  bottom: 0;
   width: 100%;
   height: 100px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+
 }
