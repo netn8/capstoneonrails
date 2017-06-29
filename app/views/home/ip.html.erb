@@ -1,1 +1,14 @@
-ip
+<%= render layout: "engineering_discipline", locals: {discipline: "UNR IP"} do %>
+  <h2 class="text-center">Documentation</h2>
+<% end %>
+<%= render layout: "engineering_discipline_contact" do %>
+  <table class="table table-striped">
+    <tbody>
+    <tr>
+      <td>Name</td>
+      <td>Email</td>
+      <td>Phone</td>
+      <td>Office #</td>
+    </tr>
+  </tbody>
+<% end %>

@@ -26,9 +26,17 @@
     float: right !important;
     margin-right: 50px;
   }
+
+  .text-center-mobile {
+    text-align: center;
+  }
 }
 
 .nav {
   // height: 64.42px;
   width: 100%;
+}
+
+.pull-right {
+  float: right !important;
 }

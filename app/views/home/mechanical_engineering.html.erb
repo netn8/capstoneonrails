@@ -1,3 +1,14 @@
 <%= render layout: "engineering_discipline", locals: {discipline: "Mechanical Engineering"} do %>
-  <p>requirements here </p>
+  <h2 class="text-center">Requirements </h2>
+<% end %>
+<%= render layout: "engineering_discipline_contact" do %>
+  <table class="table table-striped">
+    <tbody>
+    <tr>
+      <td>Name</td>
+      <td>Email</td>
+      <td>Phone</td>
+      <td>Office #</td>
+    </tr>
+  </tbody>
 <% end %>

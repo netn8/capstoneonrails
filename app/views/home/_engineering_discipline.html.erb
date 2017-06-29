@@ -1,17 +1,21 @@
 <div id="discipline-banner">
-  <div class="row">
+  <div class="row" id="row-discipline-banner">
     <div class="col-xs-12">
-      <h1> <%= discipline %> </h1>
+      <h1 id="text-discipline-banner"> <%= discipline %> </h1>
     </div>
   </div>
 </div>
+<br>
+<br>
 <div class="container">
-  <div class="row">
+  <div class="row" id="row-requirements">
     <div class="col-xs-12">
       <div class="card">
         <div class="card-block">
-          <h2> <% discipline %> Requirements </h2>
           <%= yield %>
+          <br>
+          <br>
+          <a href="#" target="_blank" class="btn btn-block btn-raised btn-primary">Submit Your Project</a>
         </div>
       </div>
     </div>
