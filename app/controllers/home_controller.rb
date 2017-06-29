@@ -11,5 +11,7 @@ class HomeController < ApplicationController
   end
   def ip
   end
+  def civil_engineering
+  end
 
 end

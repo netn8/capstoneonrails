@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get "/contact" => "home#contact"
   get "/home" => "home#home"
   get "/ip" => "home#ip"
+  get "/civil-engineering" => "home#civil_engineering"
   root :to => 'home#home'
 
 end
